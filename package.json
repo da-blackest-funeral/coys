@@ -1,0 +1,38 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.10",
+        "@babel/eslint-parser": "^7.17.0",
+        "@popperjs/core": "^2.11.5",
+        "axios": "^0.27",
+        "browser-sync": "^2.27.9",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "eslint": "^8.15.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-vue": "^8.7.1",
+        "laravel-mix": "^6.0.43",
+        "node-sass": "^7.0.1",
+        "prettier": "^2.6.2",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.51.0",
+        "sass-loader": "^12.6.0",
+        "vue": "^3.2.33",
+        "vue-loader": "^17.0.0",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1",
+        "pinia": "^2.0.14",
+        "vue-router": "^4.0.15"
+    }
+}

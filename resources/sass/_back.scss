@@ -1,0 +1,20 @@
+.back {
+    max-width: 90px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    border-style: none;
+    background-color: transparent;
+    color: $dark-grey;
+    text-decoration: none;
+    &__text {
+        margin-left: 15px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 21px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        transform: translateY(1px);
+    }
+}
