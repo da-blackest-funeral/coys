@@ -15,8 +15,8 @@ mix.js("resources/js/app.js", "public/js")
     .sass("resources/sass/app.scss", "public/css")
     .disableNotifications()
     .sourceMaps()
-    .browserSync({
-        proxy: "coys.test",
-    })
+    // .browserSync({
+    //     proxy: "http://localhost",
+    // })
     .copy('resources/fonts', 'public/fonts')
     .copy('resources/assets', 'public/assets');

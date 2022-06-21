@@ -3,6 +3,8 @@
     namespace App\Http\Requests;
 
     use Illuminate\Foundation\Http\FormRequest;
+    use Illuminate\Validation\Rule;
+    use JetBrains\PhpStorm\ArrayShape;
 
     class UpdateAccountRequest extends FormRequest
     {
@@ -18,13 +20,16 @@
         /**
          * Get the validation rules that apply to the request.
          *
-         * @return array<string, mixed>
+         * @return array<string, array>
          */
         public function rules() {
             return [
                 'name' => ['string'],
-                'phone' => ['string', 'min:12'],
-                'email' => ['email', 'unique:users,email'],
+                'phone' => ['string', 'min:10'],
+                'email' => [
+                    'email',
+                    Rule::unique('users')->ignore(\Auth::user()->id)
+                ],
                 'password' => ['min:8'],
             ];
         }

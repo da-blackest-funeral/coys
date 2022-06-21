@@ -18,9 +18,9 @@
     |
     */
 
-    Route::middleware('auth:sanctum')->group(function () {
-        Route::get('/account', function (Request $request) {
-            return $request->user();
+    Route::middleware('auth')->group(function () {
+        Route::get('/account', function () {
+            return Auth::user();
         })->name('private-route');
 
         Route::post('/account', function (UpdateAccountRequest $request) {
