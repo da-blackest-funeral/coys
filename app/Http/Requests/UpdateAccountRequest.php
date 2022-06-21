@@ -4,7 +4,6 @@
 
     use Illuminate\Foundation\Http\FormRequest;
     use Illuminate\Validation\Rule;
-    use JetBrains\PhpStorm\ArrayShape;
 
     class UpdateAccountRequest extends FormRequest
     {
